@@ -18,6 +18,11 @@ body {
   font-weight: 300;
 }
 
+/* Best practice styles for images - most of the time */
+img {
+  max-width: 100%;
+  display: block;
+}
 
 /* Typography */
 
@@ -82,10 +87,6 @@ strong {
 /**************
    Layout 
 ***************/
-header {
-  background: #F8F8F8;
-  padding: 2em 0;
-}
 
 .container {
   width: 90%;
@@ -93,21 +94,30 @@ header {
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
-/* Layout Media Queries */
-@media (max-width: 675px) {
 
-  header {
-    text-align: center;
-  }
-  .container-nav {
-    flex-direction: column;
+header {
+  background: #F8F8F8;
+  padding: 2em 0;
+  text-align: center;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
   }
 
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
+  }
 }
 
 
