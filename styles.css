@@ -14,7 +14,7 @@ Colors:
 body {
   margin: 0;
   font-family:'Ubuntu', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #707070;
 }
@@ -45,7 +45,7 @@ h3 {
 
 h1 {
   font-size: 3.375rem;
-  margin: 0;
+  margin: 0 0 3px 0;
 }
 
 h3 {
@@ -189,7 +189,7 @@ nav a:focus {
 }
 
 .current-page {
-  border-bottom: 2px solid #707070;
+  border-bottom: 1px solid #707070;
 }
 
 .current-page:hover {
@@ -297,10 +297,13 @@ nav a:focus {
   margin: 0;
 }
 
+.widget-body {
+  color: #143774;
+}
+
 .widget-image {
   order: -1;
   margin-bottom: 1em;
 }
 
-/* About Me Page Styles */
 
