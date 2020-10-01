@@ -16,6 +16,7 @@ body {
   font-family:'Ubuntu', sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  line-height: 1.6; /* A good standard line-height unit for most cases - Set to body, not for headings */
   color: #707070;
 }
 
@@ -299,6 +300,7 @@ nav a:focus {
 
 .widget-body {
   color: #143774;
+  line-height: 1.4;
 }
 
 .widget-image {
